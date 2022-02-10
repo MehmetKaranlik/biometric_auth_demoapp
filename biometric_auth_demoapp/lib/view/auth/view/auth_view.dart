@@ -6,8 +6,21 @@ class AuthView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text('AuthView'),
+      body: SafeArea(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.max,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Row(
+              children: const [
+                Spacer(),
+                Text('AuthView'),
+                Spacer(),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
