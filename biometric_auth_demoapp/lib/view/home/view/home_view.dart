@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:glass_kit/glass_kit.dart';
 
-import '../../../core/extensions/build_context_extensions.dart';
+import '../../../core/extensions/context_extensions.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
