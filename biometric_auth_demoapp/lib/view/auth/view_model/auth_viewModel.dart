@@ -16,10 +16,6 @@ class AuthViewModel extends GetxController {
 
   late final LocalAuthentication _localAuthentication;
 
-  //to check whether device supports fingerprint authentication
-  final RxBool _isBiometricAvailable = false.obs;
-  bool get isBiometricavailable => _isBiometricAvailable.value;
-  set isBiometricAvailable(bool value) => _isBiometricAvailable.value = value;
 
   // error message to show on screen
   final RxString _errorMessage = 'Please scan your finger for authentication'.obs;
@@ -58,7 +54,7 @@ class AuthViewModel extends GetxController {
       }
     } on PlatformException catch (e) {
       _buildLockDownFunction(e);
-    }
+    } 
   }
 
   void _buildLockDownFunction(PlatformException e) {
